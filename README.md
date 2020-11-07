@@ -23,3 +23,6 @@ WHEN I click on the images of the applications
 THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
+
+![02-advanced-css-homework-demo](https://user-images.githubusercontent.com/73137291/98451769-1d4c6b80-2106-11eb-930f-8354eb28ee59.gif)
+
