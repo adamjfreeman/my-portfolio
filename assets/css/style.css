@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+
+header {
+    padding: 20px 35px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border-bottom: 5px solid #024e76;
+    z-index: 9999;
+  }
+  header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color:white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  header a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+
+  }
+  header nav {
+    margin: 5px 0;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding-top: 5px;
+  }
+
+  header nav ul li a {
+  padding: 10 15px;
+  font-weight: lighter;
+  font-size: 25px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  }
+
+  header nav ul li a:hover {
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
+
+  .hero {
+    background-image: url("../images/cool-background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 100%;
+  }
+
+  .me {
+      display: flex;
+      justify-content: center;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-left: 20px;
+  }
+
+  .me-image {
+    width: auto;
+    height: 100%;
+  }
+    
+
+  .me-title {
+      color:  white;
+      text-decoration: underline solid #024e76;
+      font-size: 36px;
+      display: flex;
+      align-content: center; 
+  }
+
+  .me p {
+    color: white;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-right: 150px;    
+}
+
+.me-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.work-title {
+    color:  white;
+    text-decoration: underline solid #024e76;
+    font-size: 36px;
+    display: flex;
+    align-content: center; 
+}
+
+.contact-title {
+    color:  white;
+    font-size: 36px;
+    display: flex;
+    align-content: center; 
+}
+
+footer {
+    padding: 20px 35px;
+    background-color: black;
+    border-top: 5px solid #024e76;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .contact-info {
+      color: white;
+      font-size: 15px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 15px;
+      margin: 5px;
+  }
+
+  .contact-info a {
+    color: #024e76;  
+  }
+
+  .contact-info ul a {
+      margin: 10px;
+  }
+      
+
+  
