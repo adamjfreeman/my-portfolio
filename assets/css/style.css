@@ -72,11 +72,6 @@ header {
       padding-top: 20px;
       padding-left: 20px;
   }
-
-  .me-image {
-    width: auto;
-    height: 100%;
-  }
     
 
   .me-title {
@@ -91,14 +86,14 @@ header {
     color: white;
     font-size: 16px;
     padding-top: 20px;
-    padding-right: 150px;    
+    padding-right: 150px;
+    display: flex;    
 }
 
 .me-text {
   padding-top: 100px;
   padding-bottom: 50px;
 }
-
 .work-title {
     color:  white;
     text-decoration: underline solid #024e76;
@@ -114,8 +109,64 @@ header {
     align-content: center; 
 }
 
+.work-title {
+    padding-left: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20px;
+    grid-auto-columns: 40px;
+    grid-template-rows: 20px;
+    grid-auto-rows: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    grid-auto-flow: dense;
+
+
+  }
+
+  .grid-item  {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  
+    
+  }
+  .grid-item a {
+    color: white;
+    font-size: 35px;
+}
+  .item-1 {
+    grid-column: 2 / 11;
+    grid-row: 2 / 13;
+    background-image: url("../images/hero-bg.jpg");
+    background-position: center;
+  }
+
+  .item-2 {
+    grid-column: 12 / 18;
+    grid-row: 2 / 7;
+    background-image: url("../images/chevy-news.png");
+    background-position: center;
+
+  }
+
+  .item-3 {
+    grid-column: 12 / 18;
+    grid-row: 8 / 13;
+    background-image: url("../images/espn.jfif");
+    background-position: center;
+  }
+
+  
+  
+
 footer {
-    padding: 20px 35px;
+    padding: 10px 15px;
     background-color: black;
     border-top: 5px solid #024e76;
   }
@@ -129,8 +180,6 @@ footer {
   .contact-info {
       color: white;
       font-size: 15px;
-      display: flex;
-      justify-content: space-between;
       padding-top: 15px;
       margin: 5px;
   }
@@ -142,6 +191,72 @@ footer {
   .contact-info ul a {
       margin: 10px;
   }
-      
+
+  @media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+
+    .me {
+        display: block;
+        float: left;
+        padding: 20px;
+    }
+
+    .me-image {
+        height: auto;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+  .top-row {
+    display: block;
+    justify-content: left;
+    padding-top: 15px;
+    margin: 5px;
+    }
+
+
+    .grid-item {
+      color: white;
+      font-size: 25px;
+      justify-content: center ;
+      align-items: center;
+  }
+
+  .item-1 {
+    grid-column: 2 / 11;
+    grid-row: 2 / 8;
+  }
+
+  .item-2 {
+    grid-column: 2 / 11;
+    grid-row: 9 / 15;
+  }
+    .item-3 {
+      grid-column: 2 / 11;
+      grid-row: 16 / 22;
+    }
+
+  .hero {
+    background-image: url("../images/cool-background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 70%;
+  }
+
+  .contact {
+    
+    display: block;
+    justify-content: left;
+    padding-top: 15px;
+    margin: 5px;
+    }
+}
 
   
